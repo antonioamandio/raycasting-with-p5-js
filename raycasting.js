@@ -14,9 +14,15 @@ const gamemap = [
 const gameWidth = 320;
 const gameHeight = 200; 
 
+let pos;
+let dir;
+
 function setup() {
   createCanvas(gameWidth, gameHeight);
   noStroke();
+
+  pos = createVector(5, 5);
+  dir = createVector(0, -1);
 }
 
 function draw() {
